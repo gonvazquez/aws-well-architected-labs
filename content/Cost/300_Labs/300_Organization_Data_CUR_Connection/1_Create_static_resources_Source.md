@@ -27,7 +27,7 @@ This section is **optional** and automates the creation of the AWS organizations
 
 2. Input the stack name as  **Organization-data-collector-stack**. Then filled in the Parameters. Click **Next**.
  * **DatabaseName** - Athena Database name where you table will be created
- * **DestinationBucket** - The name you would like of the bucket that will be created in to hold org data, you will need to use a with **cost** at the start, (we have used cost-aws-lab-organisation-bucket)
+ * **DestinationBucket** - The name you would like of the bucket that will be created in to hold org data, you will need to use a with **cost** at the start, (we have used cost-aws-lab-organization-bucket)
  * **ManagementAccountId** - Your Management Account Id where your Optimization is held
  * **Tags** - List of tags from your Organization you would like to include separated by a comma.
 ![Images/Parameters.png](/Cost/300_Organization_Data_CUR_Connection/Images/Parameters.png)
@@ -67,7 +67,7 @@ Now that you have deployed the CloudFormation, you must test your Lambda functio
 
 ![Images/Lambda_Success.png](/Cost/300_Organization_Data_CUR_Connection/Images/Lambda_Success.png)
 
-5.	Go to your S3 bucket and into the organisation-data folder and you should see a file of non-zero size:
+5.	Go to your S3 bucket and into the organization-data folder and you should see a file of non-zero size:
 
 ![Images/Org_in_S3.png](/Cost/300_Organization_Data_CUR_Connection/Images/Org_in_S3.png)
 
@@ -113,7 +113,7 @@ Now you have deployed the Terraform then you can test your lambda to get your fi
 
 ![Images/Lambda_Success.png](/Cost/300_Organization_Data_CUR_Connection/Images/Lambda_Success.png)
 
-6.	Go to your S3 bucket and into the organisation-data folder and you should see a file of non-zero size is in it:
+6.	Go to your S3 bucket and into the organization-data folder and you should see a file of non-zero size is in it:
 
 ![Images/Org_in_S3.png](/Cost/300_Organization_Data_CUR_Connection/Images/Org_in_S3.png)
 
@@ -133,13 +133,13 @@ NOTE: You have successfully completed all Terraform specific steps. All remainin
 ### Create the Organization data collector manually
 
 ### Create Amazon S3 Bucket and Folders
-We’ll create an S3 bucket to store the organizations data to be combined with your cost and usage report. This will hold your organisation data so we can connect it to Athena.
+We’ll create an S3 bucket to store the organizations data to be combined with your cost and usage report. This will hold your organization data so we can connect it to Athena.
 
 1. Login via SSO to your Cost Optimization account, go into the **S3** console:
 
 ![Images/home_s3-dashboard.png](/Cost/300_Organization_Data_CUR_Connection/Images/home_s3-dashboard.png)
 
-2. Click **Create bucket** and create a bucket. You will need to use a unique bucket name with **cost** at the start, (we have used cost-aws-lab-organisation-bucket). Make a note of this as we will be using it later.
+2. Click **Create bucket** and create a bucket. You will need to use a unique bucket name with **cost** at the start, (we have used cost-aws-lab-organization-bucket). Make a note of this as we will be using it later.
 
 
 
